@@ -9,6 +9,7 @@ exports.config = {
   specs: [
     './src/**/*.e2e-spec.ts'
   ],
+  //ubuntu export DBUS_SESSION_BUS_ADDRESS=/dev/null and no longer have any hanging chromedriver processes!
   capabilities: {
     browserName: 'chrome',
       chromeOptions: {
@@ -28,11 +29,11 @@ exports.config = {
     require('ts-node').register({
       project: require('path').join(__dirname, './tsconfig.e2e.json')
     });
-    jasmine.getEnv().addReporter(new SpecReporter({ spec: { displayStacktrace: true } }));
-    // jasmine.getEnv().addReporter(
-    //   new Jasmine2HtmlReporter({
-    //     savePath: 'target/screenshots'
-    //   })
-    // );    
+    // jasmine.getEnv().addReporter(new SpecReporter({ spec: { displayStacktrace: true } }));
+    jasmine.getEnv().addReporter(
+      new Jasmine2HtmlReporter({
+        savePath: 'target/screenshots'
+      })
+    );    
   }
 };
