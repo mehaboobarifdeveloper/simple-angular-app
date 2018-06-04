@@ -5,6 +5,7 @@ describe('workspace-project App', () => {
 
   beforeEach(() => {
     page = new AppPage();
+    console.log("testing started here");
   });
 
   it('should display welcome message', () => {
