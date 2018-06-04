@@ -32,7 +32,8 @@ exports.config = {
     // jasmine.getEnv().addReporter(new SpecReporter({ spec: { displayStacktrace: true } }));
     jasmine.getEnv().addReporter(
       new Jasmine2HtmlReporter({
-        savePath: 'target/screenshots'
+        savePath: 'target/screenshots',
+        takeScreenshots: false
       })
     );    
   }
