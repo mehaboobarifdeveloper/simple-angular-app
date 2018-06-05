@@ -13,10 +13,10 @@ exports.config = {
   capabilities: {
     browserName: 'chrome',
       chromeOptions: {
-        args: [ "--headless", "--disable-gpu", "--window-size=1800,1100",
+        args: [ "--headless", "--disable-gpu", 
                 "--no-sandbox", "--disable-extensions","--disable-dev-shm-usage"]
         }
-  },
+  },//"--window-size=1800,1100",
   directConnect: true,
   baseUrl: 'http://localhost:4200/',
   framework: 'jasmine',
