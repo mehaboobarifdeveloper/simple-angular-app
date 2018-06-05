@@ -17,7 +17,8 @@ exports.config = {
                 "--no-sandbox", "--disable-extensions","--disable-dev-shm-usage"]
         }
   },
-  directConnect: true,
+  directConnect: false,
+  seleniumAddress:'http://localhost:4444/wd/hub', 
   baseUrl: 'http://localhost:4200/',
   framework: 'jasmine',
   jasmineNodeOpts: {
