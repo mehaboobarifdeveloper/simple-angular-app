@@ -9,15 +9,15 @@ exports.config = {
   specs: [
     './src/**/*.e2e-spec.ts'
   ],
-  //ubuntu export DBUS_SESSION_BUS_ADDRESS=/dev/null and no longer have any hanging chromedriver processes!
+  //ubuntu export DBUS_SESSION_BUS_ADDRESS=/dev/null and no longer have any hanging chromedriver processes!
   capabilities: {
-    browserName: 'firefox',
-      'moz:firefoxOptions' : {
-        args: [ "--headless"]
+    browserName: 'chrome',
+      chromeOptions: {
+        args: [ "--headless", "--disable-gpu", "--window-size=1800,1100",
+                "--no-sandbox", "--disable-extensions","--disable-dev-shm-usage"]
         }
   },
-  directConnect: false,
-  seleniumAddress:'http://localhost:4444/wd/hub', 
+  directConnect: true,
   baseUrl: 'http://localhost:4200/',
   framework: 'jasmine',
   jasmineNodeOpts: {
