@@ -8,4 +8,5 @@ node {
 	stage 'protractor tests'
 		echo 'TESTING STARTED..123...4'
 		sh './e2e/protractor config.js'
+
 }
