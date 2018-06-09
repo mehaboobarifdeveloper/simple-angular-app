@@ -6,7 +6,7 @@ var Jasmine2HtmlReporter = require('protractor-jasmine2-html-reporter');
 var jasmineReporters = require('jasmine-reporters');
 
 exports.config = {
-  allScriptsTimeout: 11000,
+  allScriptsTimeout: 18000,
   specs: [
     './src/**/*.e2e-spec.ts'
   ],
@@ -14,8 +14,7 @@ exports.config = {
   capabilities: {
     browserName: 'chrome',
       chromeOptions: {
-        args: [ "--headless", "--disable-gpu", 
-                "--no-sandbox", "--disable-extensions","--disable-dev-shm-usage"]
+        args: [ "--headless", "--disable-gpu", "--window-size=800x600"]
         }
   },//"--window-size=1800,1100",
   directConnect: true,
@@ -37,10 +36,12 @@ exports.config = {
     //   //   takeScreenshots: false,
     //   //   cleanDestination: false
     //   // })
-    //   new jasmineReporters.JUnitXmlReporter(
-    //   {
-    //     savePath: 'testreport',
-    //   }
-    //   ));
+       new jasmineReporters.JUnitXmlReporter(
+       {
+        savePath: 'test-output',
+        filePrefix: 'ng-e2e-results',
+        consolidateAll: true
+       }
+      ));
   }
 };
