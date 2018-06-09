@@ -3,10 +3,10 @@ node {
 		checkout scm
 
 	stage 'Build'
- 		echo 'Testing..123'
+ 		echo 'Testing..123..4'
 
 	stage 'protractor tests'
     sh 'sudo webdriver-manager update'
-    sh "sudo npm install"
-		sh "sudo protractor ./e2e/protractor.conf.js"
+    sh 'sudo npm install'
+		sh 'sudo npm e2e'
 }
