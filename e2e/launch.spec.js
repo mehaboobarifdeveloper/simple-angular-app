@@ -1,7 +1,7 @@
 describe("Application Launch",()=>{
     it("Launch application in browser",()=>{
         browser.ignoreSynchronization = true;
-        browser.get("http://newtours.demoaut.com/");
+        browser.get("http://localhost:4200/");
         browser.wait(()=>{
             return element(by.name('userName')).isPresent();
         },30000);
