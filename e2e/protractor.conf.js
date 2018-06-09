@@ -33,7 +33,8 @@ exports.config = {
     jasmine.getEnv().addReporter(
       new Jasmine2HtmlReporter({
         savePath: 'target/screenshots',
-        takeScreenshots: false
+        takeScreenshots: false,
+        cleanDestination: false
       })
     );    
   }
