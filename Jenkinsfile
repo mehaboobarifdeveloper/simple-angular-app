@@ -6,8 +6,7 @@ node {
  		echo 'Testing..'
 
 	stage 'protractor tests'
-    sh 'pkill chrome'
-    sh 'sudo webdriver-manager update --versions.chrome 2.38'
+    sh 'sudo webdriver-manager update'
     sh "sudo npm install"
 		sh "sudo ng e2e"
 
