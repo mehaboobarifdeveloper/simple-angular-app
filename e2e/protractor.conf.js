@@ -4,7 +4,7 @@ exports.config = {
     capabilities: {
         'browserName': 'chrome',
         'chromeOptions':{
-            'args': ['--headless','--disable-gpu']
+            'args': ['--headless','--disable-gpu','--no-sandbox']
         }
       },
     allScriptsTimeout: 60000, 
