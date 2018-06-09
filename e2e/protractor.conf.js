@@ -11,6 +11,6 @@ exports.config = {
     jasmineNodeOpts: {
         showColors: true, // Use colors in the command line report.
       },
-    baseUrl: 'http://localhost:4200/',
+    baseUrl: 'http://127.0.0.1:4200/',
 
 }

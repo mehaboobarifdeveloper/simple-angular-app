@@ -1,11 +1,9 @@
 describe("Application Launch",()=>{
     it("Launch application in browser",()=>{
-        browser.ignoreSynchronization = true;
-        browser.get("http://localhost:4200/");
+        browser.get("/");
         browser.wait(()=>{
-            return element(by.name('userName')).isPresent();
+            return element(by.css('app-root h1')).isPresent();
         },30000);
-        element(by.name('userName')).sendKeys("testing");
-        expect(element(by.name('userName')).isPresent()).toBe(true);
+        expect(element(by.css('app-root h1')).getText()).toEqual("Welcome to app!");
     })
 });
