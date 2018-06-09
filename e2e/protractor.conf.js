@@ -14,7 +14,7 @@ exports.config = {
   capabilities: {
     browserName: 'chrome',
       chromeOptions: {
-        args: ["--headless", "--disable-gpu", "--window-size=800x600",'--remote-debugging-port=9222']
+        args: ["--headless", "--disable-gpu", "--window-size=800x600",'--no-sandbox']
         }
   },//"--window-size=1800,1100",
   directConnect: true,
@@ -26,9 +26,9 @@ exports.config = {
     print: function() {}
   },
   onPrepare() {
-    require('ts-node').register({
-      project: require('path').join(__dirname, './tsconfig.e2e.json')
-    });
+//     require('ts-node').register({
+//       project: require('path').join(__dirname, './tsconfig.e2e.json')
+//     });
     // jasmine.getEnv().addReporter(new SpecReporter({ spec: { displayStacktrace: true } }));
     jasmine.getEnv().addReporter(
     //   // new Jasmine2HtmlReporter({
