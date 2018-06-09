@@ -3,6 +3,7 @@
 
 const { SpecReporter } = require('jasmine-spec-reporter');
 var Jasmine2HtmlReporter = require('protractor-jasmine2-html-reporter');
+var jasmineReporters = require('jasmine-reporters');
 
 exports.config = {
   allScriptsTimeout: 11000,
@@ -36,7 +37,10 @@ exports.config = {
       //   takeScreenshots: false,
       //   cleanDestination: false
       // })
-      new jasmine.JUnitXmlReporter('xmloutput', true, true));
-    );    
+      new jasmineReporters.JUnitXmlReporter(
+      {
+        savePath: 'testreport',
+      }
+      ));
   }
 };
