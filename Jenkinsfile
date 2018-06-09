@@ -6,6 +6,7 @@ node {
  		echo 'Testing..'
 
 	stage 'protractor tests'
-		sh "ng e2e"
+    sh "sudo npm install"
+		sh "sudo ng e2e"
 
 }
