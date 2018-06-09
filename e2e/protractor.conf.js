@@ -4,13 +4,14 @@ exports.config = {
     capabilities: {
         'browserName': 'chrome',
         'chromeOptions':{
-            'args': ['--no-sandbox']
-        }//'--headless','--disable-gpu',
+            'args': ['--headless','--disable-gpu']
+        }//'--headless','--disable-gpu',--no-sandbox
       },
     allScriptsTimeout: 60000, 
     jasmineNodeOpts: {
         showColors: true, // Use colors in the command line report.
+        defaultTimeoutInterval: 30000,
       },
-    baseUrl: 'http://127.0.0.1:4200/',
+    baseUrl: 'http://localhost:4200/',
 
 }
