@@ -31,16 +31,16 @@ exports.config = {
       project: require('path').join(__dirname, './tsconfig.e2e.json')
     });
     // jasmine.getEnv().addReporter(new SpecReporter({ spec: { displayStacktrace: true } }));
-    jasmine.getEnv().addReporter(
-      // new Jasmine2HtmlReporter({
-      //   savePath: 'target/screenshots',
-      //   takeScreenshots: false,
-      //   cleanDestination: false
-      // })
-      new jasmineReporters.JUnitXmlReporter(
-      {
-        savePath: 'testreport',
-      }
-      ));
+    // jasmine.getEnv().addReporter(
+    //   // new Jasmine2HtmlReporter({
+    //   //   savePath: 'target/screenshots',
+    //   //   takeScreenshots: false,
+    //   //   cleanDestination: false
+    //   // })
+    //   new jasmineReporters.JUnitXmlReporter(
+    //   {
+    //     savePath: 'testreport',
+    //   }
+    //   ));
   }
 };
