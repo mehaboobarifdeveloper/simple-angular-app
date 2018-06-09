@@ -8,5 +8,5 @@ node {
 	stage 'protractor tests'
     sh 'sudo webdriver-manager update'
     sh 'sudo npm install'
-		sh 'sudo npm e2e'
+		sh 'sudo ng e2e'
 }
