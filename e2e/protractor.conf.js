@@ -3,6 +3,7 @@ exports.config = {
     directConnect: true,
     capabilities: {
         'browserName': 'chrome',
+         'useAutomationExtension': false,
         'chromeOptions':{
             'args': ['--headless','--disable-gpu', '--remote-debugging-port=9229']
         }//'--headless','--disable-gpu',--no-sandbox
