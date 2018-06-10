@@ -4,11 +4,11 @@ node {
 
 	stage 'Build'
  		echo 'BUILDING STARTED..123..4'
-		//sh 'sudo ng serve'
+		sh 'sudo ng serve --progress=false --watch false'
 	stage 'protractor tests'
 		echo 'TESTING STARTED..123...4'
 		sh 'sudo npm install'
-		//sh 'sudo npm run e2e:ci'
-		sh 'protractor ./e2e/protractor.conf.js'
+		sh 'sudo ng e2e'
+		//sh 'protractor ./e2e/protractor.conf.js'
 
 }
