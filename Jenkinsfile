@@ -4,7 +4,7 @@ node {
 
 	stage 'Build'
  		echo 'BUILDING STARTED..123..4'
-		sh 'sudo ng serve --progress=false --watch false'
+		//sh 'sudo ng serve --progress=false --watch false'
 	stage 'protractor tests'
 		echo 'TESTING STARTED..123...4'
 		sh 'sudo npm install'
