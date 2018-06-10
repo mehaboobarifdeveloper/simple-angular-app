@@ -3,12 +3,11 @@ node {
 		checkout scm
 
 	stage 'Build'
- 		echo 'BUILDING STARTED..123..4'
+ 		echo 'BUILDING STARTED..123..4...5'
 		//sh 'sudo ng serve --progress=false --watch false'
 	stage 'protractor tests'
-		echo 'TESTING STARTED..123...4'
+		echo 'TESTING STARTED..123...4...5'
 		sh 'sudo npm install'
-    sh 'export DBUS_SESSION_BUS_ADDRESS=/dev/null'
 		sh 'sudo ng e2e'
 		//sh 'protractor ./e2e/protractor.conf.js'
 
