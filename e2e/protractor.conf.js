@@ -5,7 +5,7 @@ exports.config = {
         'browserName': 'chrome',
          'useAutomationExtension': false,
         'chromeOptions':{
-            'args': ['--headless','--disable-gpu', '--remote-debugging-port=9229']
+            'args': ['--headless','--disable-gpu', '--no-sandbox', '--disable-extension', '--disable-dev-shm-usage']
         }//'--headless','--disable-gpu',--no-sandbox
       },
     allScriptsTimeout: 60000, 
