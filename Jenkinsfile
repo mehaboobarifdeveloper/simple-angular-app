@@ -8,7 +8,7 @@ node {
 	stage 'protractor tests'
 		echo 'TESTING STARTED..123...4...5'
 		sh 'sudo npm install'
-		sh 'sudo ng e2e'
+		sh 'sudo ng e2e --progress=false' 
 		//sh 'protractor ./e2e/protractor.conf.js'
 
 }
