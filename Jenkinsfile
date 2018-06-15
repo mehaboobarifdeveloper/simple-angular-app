@@ -15,12 +15,14 @@ node {
 	}
 
 	 stage('deploying') {
+		sh '''		 
         # exit 1 on errors
         set -e
         # deal with remote
         echo "Checking if remote exists..."	
  		# deal with remote
-        echo "Checking if remote exists..."			 
+        echo "Checking if remote exists..."	
+		 '''		 		 
 	 }
 
 }
