@@ -6,4 +6,5 @@ describe("Application Launch",()=>{
         },30000);
         expect(element(by.css('app-root h1')).getText()).toEqual("Welcome to app!");
     })
+    //Test comments in the branch
 });
