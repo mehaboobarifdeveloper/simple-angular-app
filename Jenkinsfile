@@ -12,17 +12,19 @@ node {
 		sh 'sudo npm install'
 		//sh 'sudo npm run e2e:ci'
 		sh 'protractor ./e2e/protractor.conf.js'
+		//Testing
 	}
 
-	 stage('deploying') {
-		sh '''		 
-        # exit 1 on errors
-        set -e
-        # deal with remote
-        echo "Checking if remote exists..."	
- 		# deal with remote
-        echo "Checking if remote exists..."	
-		 '''		 		 
-	 }
+	//  stage('deploying') {
+	// 	sh '''		 
+    //     # exit 1 on errors
+    //     set -e
+    //     # deal with remote
+    //     echo "Checking if remote exists..."	
+ 	//     	# deal with remote
+    //     echo "Checking if remote exists..."	
+  	// 	 '''	
+		 	 		 
+	//  }
 
 }
