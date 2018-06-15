@@ -20,9 +20,9 @@ node {
         set -e
         # deal with remote
         echo "Checking if remote exists..."	
- 		# deal with remote
+ 	    	# deal with remote
         echo "Checking if remote exists..."	
-		 '''	
+  		 '''	
 		 	 		 
 	 }
 
