@@ -1,13 +1,13 @@
 node {
-	stage 'Checkout'
+	stage('Checkout')
 	{
 		checkout scm
 	}
 
-	stage 'Build'{
+	stage('Build'){
  		echo 'BUILDING STARTED..123..4...5'
 	}
-	stage 'protractor tests'{
+	stage('protractor tests'){
 		echo 'TESTING STARTED..123...4'
 		sh 'sudo npm install'
 		//sh 'sudo npm run e2e:ci'
