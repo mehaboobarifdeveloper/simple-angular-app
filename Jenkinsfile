@@ -12,6 +12,7 @@ node {
 		sh 'sudo npm install'
 		//sh 'sudo npm run e2e:ci'
 		sh 'protractor ./e2e/protractor.conf.js'
+		//Testing
 	}
 
 	 stage('deploying') {
