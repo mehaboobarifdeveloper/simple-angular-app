@@ -5,7 +5,7 @@ node {
 	}
 
 	stage 'Build'{
- 		echo 'BUILDING STARTED..123..4'
+ 		echo 'BUILDING STARTED..123..4...5'
 	}
 	stage 'protractor tests'{
 		echo 'TESTING STARTED..123...4'
