@@ -14,7 +14,7 @@ getTestBed().initTestEnvironment(
   BrowserDynamicTestingModule,
   platformBrowserDynamicTesting()
 );
-// Then we find all the tests.
+// Then we find all the tests. 1 commit. 2 commit. 3 comit.dgdfgdfgdfgfdg
 const context = require.context('./', true, /\.spec\.ts$/);
 // And load the modules.
 context.keys().map(context);
